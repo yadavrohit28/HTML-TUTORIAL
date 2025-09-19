@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial - Media</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #FF9933 33%, #ffffff 33%, #ffffff 66%, #138808 66%);
+      color: #000;
+    }
+    header {
+      background: rgba(0,0,0,0.2);
+      padding: 25px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 6px #aaa;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background: rgba(0,0,0,0.1);
+      padding: 10px;
+    }
+    nav a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #FF9933;
+      text-decoration: underline;
+    }
+    section {
+      padding: 20px;
+      background: rgba(255,255,255,0.8);
+      margin: 20px;
+      border-radius: 12px;
+      color: #000;
+    }
+    code {
+      background: rgba(0,0,0,0.1);
+      padding: 4px 6px;
+      border-radius: 4px;
+      display: block;
+      margin: 10px 0;
+      color: #FF4500;
+    }
+    .exercise {
+      background: rgba(255,255,255,0.6);
+      padding: 10px;
+      border-left: 5px solid #FF9933;
+      margin-top: 15px;
+      border-radius: 6px;
+    }
+    ul {
+      line-height: 1.8;
+    }
+    h2 {
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML Tutorial - Media</h1>
+    <nav>
+      <a href="page1-introduction.html">Introduction</a>
+      <a href="page2-basics.html">Basics</a>
+      <a href="page3-intermediate.html">Intermediate</a>
+      <a href="page4-forms.html">Forms</a>
+      <a href="page5-media.html">Media</a>
+      <a href="page6-references.html">References</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Adding Images</h2>
+    <p>Use the <b>&lt;img&gt;</b> tag to display images.</p>
+    <code>
+&lt;img src="images/pic.jpg" alt="Sample Image" width="300"&gt;
+    </code>
+
+    <div class="exercise">
+      <b>Exercise:</b> Add an image of your choice and set its width to 200px.
+    </div>
+  </section>
+
+  <section>
+    <h2>Adding Audio</h2>
+    <p>Use the <b>&lt;audio&gt;</b> tag with the <b>controls</b> attribute.</p>
+    <code>
+&lt;audio controls&gt;
+&nbsp;&nbsp;&lt;source src="music.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+    </code>
+
+    <div class="exercise">
+      <b>Exercise:</b> Add an audio file to your webpage with controls.
+    </div>
+  </section>
+
+  <section>
+    <h2>Adding Video</h2>
+    <p>Use the <b>&lt;video&gt;</b> tag with width and controls.</p>
+    <code>
+&lt;video width="400" controls&gt;
+&nbsp;&nbsp;&lt;source src="movie.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+    </code>
+
+    <div class="exercise">
+      <b>Exercise:</b> Add a short video clip to your webpage.
+    </div>
+  </section>
+
+  <section>
+    <h2>Embedding External Content</h2>
+    <p>Use the <b>&lt;iframe&gt;</b> tag to embed YouTube videos or maps.</p>
+    <code>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+    </code>
+
+    <div class="exercise">
+      <b>Exercise:</b> Embed your favorite YouTube video.
+    </div>
+  </section>
+
+  <section>
+    <h2>Favicon</h2>
+    <p>Favicons appear in browser tabs.</p>
+    <code>
+&lt;link rel="icon" type="image/png" href="favicon.png"&gt;
+    </code>
+  </section>
+
+  <section>
+    <h2>Emojis</h2>
+    <p>HTML supports emojis using Unicode.</p>
+    <code>
+&lt;p&gt;I love coding 😍🔥&lt;/p&gt;
+    </code>
+  </section>
+
+  <section>
+    <h2>Responsive Design Basics</h2>
+    <p>Use the viewport meta tag for responsive websites.</p>
+    <code>
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    </code>
+
+    <div class="exercise">
+      <b>Exercise:</b> Try resizing your browser window to see how content adjusts.
+    </div>
+  </section>
+
+  <section>
+    <h2>HTML Layout</h2>
+    <p>Common semantic tags for layout:</p>
+    <ul>
+      <li>&lt;header&gt;</li>
+      <li>&lt;nav&gt;</li>
+      <li>&lt;main&gt;</li>
+      <li>&lt;section&gt;</li>
+      <li>&lt;article&gt;</li>
+      <li>&lt;footer&gt;</li>
+    </ul>
+  </section>
+</body>
+</html>

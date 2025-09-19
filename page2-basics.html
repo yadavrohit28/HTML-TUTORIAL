@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Basics</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #FF9933 33%, #ffffff 33%, #ffffff 66%, #138808 66%);
+      color: #000;
+    }
+    header {
+      background: rgba(0,0,0,0.2);
+      padding: 25px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 6px #aaa;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background: rgba(0,0,0,0.1);
+      padding: 10px;
+    }
+    nav a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #FF9933;
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: rgba(255,255,255,0.8);
+      padding: 20px;
+      border-radius: 12px;
+      color: #000;
+    }
+    h2 {
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+    }
+    pre {
+      background: rgba(0,0,0,0.1);
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+      color: #000;
+    }
+    code {
+      color: #FF4500;
+    }
+    .exercise {
+      background: rgba(255,255,255,0.6);
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+      border-left: 5px solid #FF9933;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML Basics</h1>
+  </header>
+
+  <nav>
+    <a href="page1-introduction.html">Intro</a>
+    <a href="page2-basics.html">Basics</a>
+    <a href="page3-intermediate.html">Intermediate</a>
+    <a href="page4-forms.html">Forms</a>
+    <a href="page5-media.html">Media</a>
+    <a href="page6-references.html">References</a>
+  </nav>
+
+  <div class="container">
+    <h2>Headings & Paragraphs</h2>
+    <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
+    <h2>Links & Images</h2>
+    <pre><code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+&lt;img src="photo.jpg" alt="Sample Photo"&gt;</code></pre>
+
+    <h2>Lists</h2>
+    <pre><code>&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+    <h2>Tables</h2>
+    <pre><code>&lt;table border="1"&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Alice&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+  </div>
+</body>
+</html>

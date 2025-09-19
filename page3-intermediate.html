@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial - Intermediate</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #FF9933 33%, #ffffff 33%, #ffffff 66%, #138808 66%);
+      color: #000;
+    }
+    header {
+      background: rgba(0,0,0,0.2);
+      padding: 25px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 6px #aaa;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background: rgba(0,0,0,0.1);
+      padding: 10px;
+    }
+    nav a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #FF9933;
+      text-decoration: underline;
+    }
+    section {
+      padding: 20px;
+      background: rgba(255,255,255,0.8);
+      margin: 20px;
+      border-radius: 12px;
+      color: #000;
+    }
+    code {
+      background: rgba(0,0,0,0.1);
+      padding: 4px 6px;
+      border-radius: 4px;
+      display: block;
+      margin: 10px 0;
+      color: #FF4500;
+    }
+    .exercise {
+      background: rgba(255,255,255,0.6);
+      padding: 10px;
+      border-left: 5px solid #FF9933;
+      margin-top: 15px;
+      border-radius: 6px;
+    }
+    h2 {
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+    }
+    ul {
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML Tutorial - Intermediate</h1>
+    <nav>
+      <a href="page1-introduction.html">Introduction</a>
+      <a href="page2-basics.html">Basics</a>
+      <a href="page3-intermediate.html">Intermediate</a>
+      <a href="page4-forms.html">Forms</a>
+      <a href="page5-media.html">Media</a>
+      <a href="page6-references.html">References</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>HTML Formatting Tags</h2>
+    <p>HTML provides several tags to format text:</p>
+    <ul>
+      <li><b>&lt;b&gt;</b> – Bold text</li>
+      <li><i>&lt;i&gt;</i> – Italic text</li>
+      <li><u>&lt;u&gt;</u> – Underlined text</li>
+      <li><mark>&lt;mark&gt;</mark> – Highlighted text</li>
+      <li><small>&lt;small&gt;</small> – Smaller text</li>
+    </ul>
+
+    <code>
+&lt;p&gt;This is &lt;b&gt;bold&lt;/b&gt;, &lt;i&gt;italic&lt;/i&gt;, and &lt;u&gt;underlined&lt;/u&gt;&lt;/p&gt;
+    </code>
+
+    <div class="exercise">
+      <b>Exercise:</b> Create a paragraph where one word is bold, another is italic, and another is highlighted.
+    </div>
+  </section>
+
+  <section>
+    <h2>Div and Span</h2>
+    <p><b>&lt;div&gt;</b> groups block-level elements, while <b>&lt;span&gt;</b> is for inline styling.</p>
+
+    <code>
+&lt;div style="background:gray;padding:10px;"&gt;
+&nbsp;&nbsp;This is inside a div.
+&lt;/div&gt;
+
+&lt;p&gt;This is &lt;span style="color:orange"&gt;highlighted&lt;/span&gt; text.&lt;/p&gt;
+    </code>
+
+    <div class="exercise">
+      <b>Exercise:</b> Make a div with a background color and put two paragraphs inside it.
+    </div>
+  </section>
+
+  <section>
+    <h2>Class and ID</h2>
+    <p>Classes and IDs help style and identify elements:</p>
+
+    <code>
+&lt;style&gt;
+.highlight { color: orange; }
+#unique { font-weight: bold; }
+&lt;/style&gt;
+
+&lt;p class="highlight"&gt;This uses a class.&lt;/p&gt;
+&lt;p id="unique"&gt;This uses an ID.&lt;/p&gt;
+    </code>
+
+    <div class="exercise">
+      <b>Exercise:</b> Add two paragraphs with the same class and style them. Add one unique element with an ID.
+    </div>
+  </section>
+
+  <section>
+    <h2>File Paths</h2>
+    <p>File paths tell the browser where to find files (like images).</p>
+    <ul>
+      <li><b>Absolute Path:</b> Full URL (e.g. <code>https://example.com/images/pic.jpg</code>)</li>
+      <li><b>Relative Path:</b> Location relative to current file (e.g. <code>images/pic.jpg</code>)</li>
+    </ul>
+
+    <code>
+&lt;img src="images/photo.jpg" alt="My Photo"&gt;
+    </code>
+
+    <div class="exercise">
+      <b>Exercise:</b> Create a folder "images", add a picture, and display it using a relative path.
+    </div>
+  </section>
+</body>
+</html>

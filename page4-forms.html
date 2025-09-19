@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial - Forms</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #FF9933 33%, #ffffff 33%, #ffffff 66%, #138808 66%);
+      color: #000;
+    }
+    header {
+      background: rgba(0,0,0,0.2);
+      padding: 25px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 6px #aaa;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background: rgba(0,0,0,0.1);
+      padding: 10px;
+    }
+    nav a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #FF9933;
+      text-decoration: underline;
+    }
+    section {
+      padding: 20px;
+      background: rgba(255,255,255,0.8);
+      margin: 20px;
+      border-radius: 12px;
+      color: #000;
+    }
+    code {
+      background: rgba(0,0,0,0.1);
+      padding: 4px 6px;
+      border-radius: 4px;
+      display: block;
+      margin: 10px 0;
+      color: #FF4500;
+    }
+    .exercise {
+      background: rgba(255,255,255,0.6);
+      padding: 10px;
+      border-left: 5px solid #FF9933;
+      margin-top: 15px;
+      border-radius: 6px;
+    }
+    input, textarea, select, button {
+      margin: 5px 0;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%;
+      max-width: 400px;
+    }
+    h2 {
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+    }
+    ul {
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML Tutorial - Forms</h1>
+    <nav>
+      <a href="page1-introduction.html">Introduction</a>
+      <a href="page2-basics.html">Basics</a>
+      <a href="page3-intermediate.html">Intermediate</a>
+      <a href="page4-forms.html">Forms</a>
+      <a href="page5-media.html">Media</a>
+      <a href="page6-references.html">References</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>What is a Form?</h2>
+    <p>Forms collect user input like names, emails, and feedback. They use the <b>&lt;form&gt;</b> tag.</p>
+
+    <code>
+&lt;form action="submit.php" method="post"&gt;
+&nbsp;&nbsp;Name: &lt;input type="text" name="name"&gt;
+&nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+    </code>
+
+    <div class="exercise">
+      <b>Exercise:</b> Create a form that takes name, email, and a submit button.
+    </div>
+  </section>
+
+  <section>
+    <h2>Input Fields</h2>
+    <p>Different types of input fields:</p>
+
+    <code>
+&lt;input type="text" placeholder="Enter text"&gt;
+&lt;input type="password" placeholder="Enter password"&gt;
+&lt;input type="email" placeholder="Enter email"&gt;
+&lt;input type="number" placeholder="Enter number"&gt;
+&lt;input type="checkbox"&gt; Agree
+&lt;input type="radio" name="gender"&gt; Male
+&lt;input type="radio" name="gender"&gt; Female
+    </code>
+
+    <div class="exercise">
+      <b>Exercise:</b> Add a password and email field in your form.
+    </div>
+  </section>
+
+  <section>
+    <h2>Textarea</h2>
+    <p>The <b>&lt;textarea&gt;</b> tag is used for multi-line text input.</p>
+
+    <code>
+&lt;textarea rows="4" cols="30"&gt;Write your feedback here...&lt;/textarea&gt;
+    </code>
+
+    <div class="exercise">
+      <b>Exercise:</b> Add a textarea in your form for feedback.
+    </div>
+  </section>
+
+  <section>
+    <h2>Select & Datalist</h2>
+    <p><b>&lt;select&gt;</b> creates a dropdown. <b>&lt;datalist&gt;</b> provides auto-suggestions.</p>
+
+    <code>
+&lt;select&gt;
+&nbsp;&nbsp;&lt;option&gt;HTML&lt;/option&gt;
+&nbsp;&nbsp;&lt;option&gt;CSS&lt;/option&gt;
+&nbsp;&nbsp;&lt;option&gt;JavaScript&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;input list="browsers"&gt;
+&lt;datalist id="browsers"&gt;
+&nbsp;&nbsp;&lt;option value="Chrome"&gt;
+&nbsp;&nbsp;&lt;option value="Firefox"&gt;
+&nbsp;&nbsp;&lt;option value="Edge"&gt;
+&lt;/datalist&gt;
+    </code>
+
+    <div class="exercise">
+      <b>Exercise:</b> Add a dropdown for selecting a country.
+    </div>
+  </section>
+
+  <section>
+    <h2>Fieldset & Legend</h2>
+    <p>These group related inputs in a form.</p>
+
+    <code>
+&lt;fieldset&gt;
+&nbsp;&nbsp;&lt;legend&gt;User Info&lt;/legend&gt;
+&nbsp;&nbsp;Name: &lt;input type="text"&gt;
+&nbsp;&nbsp;Email: &lt;input type="email"&gt;
+&lt;/fieldset&gt;
+    </code>
+
+    <div class="exercise">
+      <b>Exercise:</b> Create a fieldset with "Login Info" that has username and password fields.
+    </div>
+  </section>
+</body>
+</html>

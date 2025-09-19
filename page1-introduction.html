@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial - Introduction</title>
+  <style>
+    /* Body Styling */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #FF9933 33%, #ffffff 33%, #ffffff 66%, #138808 66%);
+      color: #000;
+    }
+
+    /* Header Styling */
+    header {
+      background: rgba(0,0,0,0.2);
+      padding: 25px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 6px #aaa;
+    }
+    header p {
+      margin-top: 8px;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    /* Navigation Styling */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background: rgba(0,0,0,0.1);
+      padding: 10px;
+    }
+    nav a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #FF9933;
+      text-decoration: underline;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: rgba(255,255,255,0.8);
+      padding: 20px;
+      border-radius: 12px;
+      color: #000;
+    }
+
+    /* Section Headings */
+    h2 {
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+    }
+
+    /* Code Blocks */
+    pre {
+      background: rgba(0,0,0,0.1);
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+      color: #000;
+    }
+    code {
+      color: #FF4500;
+    }
+
+    /* Exercise Box */
+    .exercise {
+      background: rgba(255,255,255,0.6);
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+      border-left: 5px solid #FF9933;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML Tutorial</h1>
+    <p>Last Updated: 18 Sep, 2025</p>
+  </header>
+
+  <nav>
+    <a href="page1-introduction.html">Intro</a>
+    <a href="page2-basics.html">Basics</a>
+    <a href="page3-intermediate.html">Intermediate</a>
+    <a href="page4-forms.html">Forms</a>
+    <a href="page5-media.html">Media</a>
+    <a href="page6-references.html">References</a>
+  </nav>
+
+  <div class="container">
+    <h2>What is HTML?</h2>
+    <p>HTML (HyperText Markup Language) is the standard language for creating web pages. It structures text, links, images, and multimedia. CSS adds style, while JavaScript adds interactivity.</p>
+
+    <h2>How HTML Works</h2>
+    <p>HTML documents are plain-text files saved with a <code>.html</code> extension. Browsers read them, interpret the tags, and render formatted content.</p>
+
+    <h2>'Hello World' Example</h2>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Hello World&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <div class="exercise">
+      <h3>Exercise:</h3>
+      <p>Create a webpage with a title and a paragraph saying “Welcome to My Website”.</p>
+    </div>
+  </div>
+</body>
+</html>
